@@ -14,10 +14,17 @@ document.getElementById('submit-btn').addEventListener('click', function () {
 
     // Danger!!!!! Never verify email and pass in future with the below process . Only for learning purpose.
     // step-2 verify email and password 
-    if(emailValue == 'rakib@gmail.com' && password == 'Rakib1001'){
-        console.log('Welcome back Rakib');
+    if (emailValue == 'rakib@gmail.com' && password == 'Rakib1001') {
+
+        // step - 3 :  go to bank site 
+        window.location.href = 'bank.html';
     }
-    else{
-        console.log('invalid username or password')
+    
+    else {
+        alert('invalid username or password');
     }
+
+
+
+
 })
