@@ -18,21 +18,61 @@
     </header>
 
     <main>
+        <!-- status section  -->
         <section class="mt-20">
             <div class=" grid grid-cols-3 gap-7 w-3/6 mx-auto text-white ">
                 <div class=" bg-teal-400 p-10 rounded-3xl text-center hover:bg-teal-500">
-                    <h1 class="text-2xl font-semibold" >Deposit</h1>
+                    <h1 class="text-2xl font-semibold">Deposit</h1>
                     <h2 class="text-6xl">$00</h2>
                 </div>
                 <div class=" bg-indigo-400 p-10 rounded-3xl text-center hover:bg-indigo-500">
-                    <h1 class="text-2xl font-semibold" >Withdraw</h1>
+                    <h1 class="text-2xl font-semibold">Withdraw</h1>
                     <h2 class="text-6xl">$00</h2>
                 </div>
-                <div class=" bg-red-400 p-10 rounded-3xl text-center hover:bg-red-500">
-                    <h1 class="text-2xl font-semibold" >Balance</h1>
+                <div class=" bg-red-600 p-10 rounded-3xl text-center hover:bg-red-500">
+                    <h1 class="text-2xl font-semibold">Balance</h1>
                     <h2 class="text-6xl">$10000</h2>
                 </div>
-                
+
+            </div>
+        </section>
+
+        <!-- deposit and Withdraw  -->
+        <section class="mt-20">
+            <div class=" grid grid-cols-2 gap-7 w-3/6 mx-auto text-white ">
+
+                <div class=" bg-sky-400 p-10 rounded-3xl text-center hover:bg-sky-500 space-y-4">
+
+                    <h1 class="text-4xl  text-left mb-4">Please Deposit</h1>
+
+                    <input type="number" name="" id="" placeholder="Please write an amount $"
+                        class=" mb-3 rounded-full px-4 h-10 w-3/4 text-black focus:bg-sky-50  focus:outline-4 outline-sky-500">
+
+                    <br>
+
+                    <button
+                        class="bg-sky-50 drop-shadow-md text-sky-500 text-xl font-medium py-1 px-3 rounded-full hover:bg-sky-400  hover:text-white"
+                        id="deposit-btn">
+                        Deposit
+                    </button>
+
+                </div>
+                <div class=" bg-amber-400 p-10 rounded-3xl text-center hover:bg-amber-500 space-y-4">
+
+                    <h1 class="text-4xl  text-left mb-4">Withdraw</h1>
+
+                    <input type="number" name="" id="" placeholder="Write an amount $"
+                        class=" mb-3 rounded-full px-4 h-10 w-3/4 text-black focus:bg-amber-50  focus:outline-4 outline-amber-500">
+
+                    <br>
+
+                    <button
+                        class="bg-sky-50 drop-shadow-md text-amber-500 text-xl font-medium py-1 px-3 rounded-full hover:bg-amber-600  hover:text-white"
+                        id="deposit-btn">
+                        Withdraw
+                    </button>
+
+                </div>
             </div>
         </section>
     </main>
