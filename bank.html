@@ -10,7 +10,7 @@
     <title>Your Account </title>
 </head>
 
-<body>
+<body class="bg-lime-400 bg-opacity-40">
     <header>
         <h1 class="text-5xl font-semibold  text-center mt-20">Welcome to your
             <span class="font-extrabold text-red-500 ">Private</span> Account
@@ -27,7 +27,7 @@
                 </div>
                 <div class=" bg-indigo-400 p-10 rounded-3xl text-center hover:bg-indigo-500">
                     <h1 class="text-2xl font-semibold">Withdraw</h1>
-                    <h2 class="text-6xl">$00</h2>
+                    <h2 class="text-6xl">$<span id="withdraw-value">00</span></h2>
                 </div>
                 <div class=" bg-red-600 p-10 rounded-3xl text-center hover:bg-red-500">
                     <h1 class="text-2xl font-semibold">Balance</h1>
@@ -87,6 +87,7 @@
 
 
     <script src="js/deposit.js"></script>
+    <script src="js/withdraw.js"></script>
 </body>
 
 </html>

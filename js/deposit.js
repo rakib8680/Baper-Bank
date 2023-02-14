@@ -9,6 +9,13 @@ document.getElementById('deposit-btn').addEventListener('click', function () {
     // make input string to number  
     const depositInput = parseFloat(depositInputString);
 
+    depositField.value = ''
+    
+    if (isNaN(depositInput)) {
+        alert('Please provide a valid number');
+        return;
+    }
+
     // step-3 add deposit input value to total deposit value 
     const totalDeposit = document.getElementById('deposit-value');
     const previousDepositString = totalDeposit.innerText;
@@ -31,7 +38,7 @@ document.getElementById('deposit-btn').addEventListener('click', function () {
 
 
 
-    // step- 7 clear the deposit field 
-    depositField.value = ''
+
+
 
 })
