@@ -23,7 +23,7 @@
             <div class=" grid grid-cols-3 gap-7 w-3/6 mx-auto text-white ">
                 <div class=" bg-teal-400 p-10 rounded-3xl text-center hover:bg-teal-500">
                     <h1 class="text-2xl font-semibold">Deposit</h1>
-                    <h2 class="text-6xl">$00</h2>
+                    <h2 class="text-6xl ">$<span id="deposit-value">00</span></h2>
                 </div>
                 <div class=" bg-indigo-400 p-10 rounded-3xl text-center hover:bg-indigo-500">
                     <h1 class="text-2xl font-semibold">Withdraw</h1>
@@ -45,7 +45,7 @@
 
                     <h1 class="text-4xl  text-left mb-4">Please Deposit</h1>
 
-                    <input type="number" name="" id="" placeholder="Please write an amount $"
+                    <input type="number" name="" id="deposit-field" placeholder="Please write an amount $"
                         class=" mb-3 rounded-full px-4 h-10 w-3/4 text-black focus:bg-sky-50  focus:outline-4 outline-sky-500">
 
                     <br>
@@ -61,14 +61,14 @@
 
                     <h1 class="text-4xl  text-left mb-4">Withdraw</h1>
 
-                    <input type="number" name="" id="" placeholder="Write an amount $"
+                    <input type="number" name="" id="withdraw-field" placeholder="Write an amount $"
                         class=" mb-3 rounded-full px-4 h-10 w-3/4 text-black focus:bg-amber-50  focus:outline-4 outline-amber-500">
 
                     <br>
 
                     <button
                         class="bg-sky-50 drop-shadow-md text-amber-500 text-xl font-medium py-1 px-3 rounded-full hover:bg-amber-600  hover:text-white"
-                        id="deposit-btn">
+                        id="withdraw-btn">
                         Withdraw
                     </button>
 
@@ -81,6 +81,12 @@
 
     </footer>
 
+
+
+
+
+
+    <script src="js/deposit.js"></script>
 </body>
 
 </html>
